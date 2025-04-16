@@ -47,7 +47,7 @@ accentColour="#a7d9ea"
 skipToLogin=false
 
 # Supports Markdown formatting, leave empty to not display any text
-greeting="Welcome back!"
+greeting="Bem vindo!"
 
 # Adjusts the font size for the greeting message, clock and date
 fontSizeMultiplier=2
@@ -57,7 +57,7 @@ clockFormat="HH:mm"
 dateFormat="dddd, dd MMMM"
 
 # Set this in case the date isn't in your system locale or you wish to use a different one
-locale=""
+locale="pt_BR"
 
 # Styles the clock font
 # Set to 'outline' for alternate style
@@ -102,14 +102,14 @@ displaySession=true
 # SDDM may not have translations for every element, or you might want to change some text to something else
 # setting these will override the text constants
 
-virtualKeyboard=""
-poweroff=""
-reboot=""
-suspend=""
-hibernate=""
-password=""
-username=""
-loginFailed=""
+virtualKeyboard="Teclado Virtual"
+poweroff="Desligar"
+reboot="Reiniciar"
+suspend="Suspender"
+hibernate="Hibernar"
+password="Senha"
+username="Usuário"
+loginFailed="Falha"
 
 
 # [Accessibility]
