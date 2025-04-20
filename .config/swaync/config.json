@@ -41,10 +41,10 @@
         "title": {
             "text": "Notificações",
             "clear-all-button": true,
-            "button-text": "Clear"
+            "button-text": "Limpar"
         },
         "dnd": {
-            "text": "Não perturba"
+            "text": "Não perturbe"
         },
         "label": {
             "max-lines": 1,

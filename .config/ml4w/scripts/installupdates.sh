@@ -16,14 +16,14 @@ echo
 # Confirm Start
 # ------------------------------------------------------
 
-if gum confirm "DO YOU WANT TO START THE UPDATE NOW?"; then
+if gum confirm "DESEJA INICIAR A ATUALIZAÇÃO AGORA?"; then
     echo
-    echo ":: Update started."
+    echo ":: Atualização iniciada."
 elif [ $? -eq 130 ]; then
     exit 130
 else
     echo
-    echo ":: Update canceled."
+    echo ":: Atualização cancelada."
     exit
 fi
 
@@ -40,33 +40,33 @@ _isInstalled() {
     esac
 
     if [ -n "${check}" ]; then
-        echo 0 #'0' means 'true' in Bash
-        return #true
+        echo 0 #'0' significa 'verdadeiro' no Bash
+        return #verdadeiro
     fi
-    echo 1 #'1' means 'false' in Bash
-    return #false
+    echo 1 #'1' significa 'falso' no Bash
+    return #falso
 }
 
-# Check if platform is supported
+# Verifica se a plataforma é suportada
 case $install_platform in
     arch)
         aur_helper="$(cat ~/.config/ml4w/settings/aur.sh)"
 
         if [[ $(_isInstalled "timeshift") == "0" ]]; then
             echo
-            if gum confirm "DO YOU WANT TO CREATE A SNAPSHOT?"; then
+            if gum confirm "DESEJA CRIAR UM SNAPSHOT?"; then
                 echo
-                c=$(gum input --placeholder "Enter a comment for the snapshot...")
+                c=$(gum input --placeholder "Digite um comentário para o snapshot...")
                 sudo timeshift --create --comments "$c"
                 sudo timeshift --list
                 sudo grub-mkconfig -o /boot/grub/grub.cfg
-                echo ":: DONE. Snapshot $c created!"
+                echo ":: PRONTO. Snapshot $c criado!"
                 echo
             elif [ $? -eq 130 ]; then
-                echo ":: Snapshot skipped."
+                echo ":: Snapshot ignorado."
                 exit 130
             else
-                echo ":: Snapshot skipped."
+                echo ":: Snapshot ignorado."
             fi
             echo
         fi
@@ -84,17 +84,17 @@ case $install_platform in
         fi
         ;;
     *)
-        echo ":: ERROR - Platform not supported"
-        echo "Press [ENTER] to close."
+        echo ":: ERRO - Plataforma não suportada"
+        echo "Pressione [ENTER] para fechar."
         read
         ;;
 esac
 
-notify-send "Update complete"
+notify-send "Atualização concluída"
 echo
-echo ":: Update complete"
+echo ":: Atualização concluída"
 echo
 echo
 
-echo "Press [ENTER] to close."
+echo "Pressione [ENTER] para fechar."
 read

@@ -1,8 +1,8 @@
 [General]
 
 # Set to your screen resolution for better results
-width=1680
-height=1050
+width=1920
+height=1080
 
 backgroundColour="black"
 
@@ -54,7 +54,6 @@ fontSizeMultiplier=2
 
 # For help with date and time formatting see https://doc.qt.io/qt-5/qml-qtqml-date.html#format-strings
 clockFormat="HH:mm"
-dateFormat="dddd, dd MMMM"
 
 # Set this in case the date isn't in your system locale or you wish to use a different one
 locale="pt_BR"

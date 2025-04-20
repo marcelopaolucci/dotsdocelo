@@ -1,56 +1,56 @@
 /*
-Define your quick links for the statusbar here.
-YOu can use icons from here https://fontawesome.com/search?ic=free
-You can reload waybar with SUPER + SHIFT + B
+Defina seus atalhos rápidos para a barra de status aqui.
+Você pode usar ícones deste site: https://fontawesome.com/search?ic=free
+Você pode recarregar o Waybar com SUPER + SHIFT + B
 */
 {
     "custom/quicklink_browser": {
-        "format": "",
+        "format": "",
         "on-click": "~/.config/ml4w/settings/browser.sh",
-        "tooltip-format": "Open Browser"
+        "tooltip-format": "Abrir Navegador"
     },
     "custom/quicklink_filemanager": {
-        "format": "",
+        "format": "",
         "on-click": "~/.config/ml4w/settings/filemanager.sh",
-        "tooltip-format": "Open Filemanager"
+        "tooltip-format": "Abrir Gerenciador de Arquivos"
     },
     "custom/quicklink_email": {
         "format": "",
         "on-click": "~/.config/ml4w/settings/email.sh",
-        "tooltip-format": "Open Email Client"
+        "tooltip-format": "Abrir Cliente de E-mail"
     },
     "custom/quicklink_chromium": {
         "format": "",
         "on-click": "chromium",
-        "tooltip-format": "Open Chromium"
+        "tooltip-format": "Abrir Chromium"
     },
     "custom/quicklink_edge": {
         "format": "",
         "on-click": "edge",
-        "tooltip-format": "Open Edge"
+        "tooltip-format": "Abrir Edge"
     },
     "custom/quicklink_firefox": {
         "format": "",
         "on-click": "firefox",
-        "tooltip-format": "Open Firefox"
+        "tooltip-format": "Abrir Firefox"
     },
     "custom/quicklink_thunderbird": {
         "format": "",
         "on-click": "thunderbird",
-        "tooltip-format": "Open Thunderbird"
+        "tooltip-format": "Abrir Thunderbird"
     },
     "custom/quicklink_calculator": {
         "format": "",
         "on-click": "~/.config/ml4w/settings/calculator.sh",
-        "tooltip-format": "Open calculator"
+        "tooltip-format": "Abrir Calculadora"
     },
 /*
-Don't remove the quicklinkempty
+Não remova o quicklinkempty
 */
     "custom/quicklinkempty": {
     },
 /*
-Add your quicklinks in your desired order to the status bar
+Adicione seus atalhos rápidos na ordem desejada para a barra de status
 */
     "group/quicklinks": {
         "orientation": "horizontal",
@@ -61,7 +61,7 @@ Add your quicklinks in your desired order to the status bar
             "custom/quicklink_filemanager",
 
 /*
-Don't remove the quicklinkempty
+Não remova o quicklinkempty
 */
             "custom/quicklinkempty"
         ]
