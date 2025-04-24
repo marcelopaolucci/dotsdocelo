@@ -233,7 +233,7 @@
   // Clock
   "clock": {
         "format": "{:%H:%M - %Od.%Om.%y}",
-    "on-click": "flatpak run com.ml4w.calendar",
+    "on-click": "gnome-calendar",
     "timezone": "",
     "tooltip": false
   },
@@ -268,17 +268,6 @@
     "format": "/ K {short}"
   },
 
-  // Group Hardware
-  "group/hardware": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "children-class": "not-memory",
-      "transition-left-to-right": false
-    },
-    "modules": ["custom/system", "disk", "cpu", "memory", "hyprland/language"]
-  },
-
   // Group Tools
   "group/tools": {
     "orientation": "inherit",
@@ -299,7 +288,7 @@
   "group/links": {
     "orientation": "horizontal",
     "modules": [
-      "custom/chatgpt",
+//      "custom/chatgpt",
       "custom/empty"
     ]
   },

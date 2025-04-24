@@ -28,14 +28,14 @@
         "custom/appmenu",
         "hyprland/workspaces",
         "group/links",
-//"wlr/taskbar",
-        "group/quicklinks",
+        //"wlr/taskbar",
+        //"group/quicklinks",
         "custom/empty"
     ],
 
     // Modules Center
     "modules-center": [
-        "hyprland/window",
+        //"hyprland/window",
         "custom/empty"
     ],
 
@@ -50,7 +50,7 @@
         "power-profiles-daemon",
         "group/hardware",
         "group/tools",
-"tray",
+        "tray",
         "custom/notification",
         "custom/exit",
         "custom/ml4w-welcome",

@@ -28,9 +28,9 @@
     "modules-left": [
         "custom/appmenu",
         "group/links",
-//"wlr/taskbar",
-        "group/quicklinks",
-        "hyprland/window",
+        //"wlr/taskbar",
+        //"group/quicklinks",
+        //"hyprland/window",
     ],
 
     // Modules Center
@@ -50,7 +50,7 @@
         "power-profiles-daemon",
         "group/hardware",
         "group/tools",
-"tray",
+        "tray",
         "custom/notification",
         "custom/exit",
         "custom/ml4w-welcome",
