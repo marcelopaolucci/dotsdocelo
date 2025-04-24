@@ -47,7 +47,7 @@ accentColour="#a7d9ea"
 skipToLogin=false
 
 # Supports Markdown formatting, leave empty to not display any text
-greeting="Bem vindo!"
+greeting="Bem-vindo!"
 
 # Adjusts the font size for the greeting message, clock and date
 fontSizeMultiplier=2
